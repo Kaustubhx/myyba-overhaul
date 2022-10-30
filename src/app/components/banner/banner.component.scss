@@ -1,0 +1,67 @@
+.bannerWrapper {
+    position: relative;
+    height: 470px;
+    // padding: 3rem 0;
+
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+}
+
+.upperBanner {
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    background-color: white;
+    z-index: -3;
+    top: 0;
+}
+
+.middleBanner {
+    position: relative;
+    height: 22rem;
+    z-index: 3;
+    color: black;
+    inset: 0 auto;
+    padding: 0;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.middleBanner-carouselSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-features {
+    width: 100%;
+    max-width: 18rem;
+
+    --border-width: 1px;
+    --background-color: #fff;
+}
+
+.middleBanner-loginSection {
+    // margin-right: 4rem;
+    max-width: 19rem;
+    margin: 0 auto;
+}
+
+.loginSectionText {
+    display: flex;
+    flex-direction: column;
+
+    padding: 3.5rem 0;
+}
+
+.lowerBanner {
+    position: absolute;
+    height: 53%;
+    width: 100%;
+    background-color: black;
+    bottom: 0;
+    z-index: -3;
+}
