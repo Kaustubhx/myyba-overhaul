@@ -1,9 +1,11 @@
 .header-md::after {
-    background: none;
+    background: none; //disabled default header Shadow
 }
 
 .headerWrapper {
     padding: 1.5rem 0;
+    max-width: 1280px;
+    margin: 0 auto;
 }
 
 .navbar {
@@ -12,9 +14,16 @@
     align-items: center;
 }
 
+@media only screen and (min-width: 1280px) {
+    .navbar {
+        justify-content: space-between;
+    }
+}
+
 .navbar_left {
     display: flex;
     flex-direction: column;
+    cursor: pointer;
 }
 
 .hover-underline-animation {
@@ -22,6 +31,7 @@
     position: relative;
     color: black;
     transition: color 0.25s ease-out;
+    cursor: pointer;
 }
 
 .hover-underline-animation:hover {
