@@ -1,0 +1,30 @@
+.myybaKnowMore-wrapper {
+    display: flex;
+    justify-content: flex-end;
+
+    // padding: 0 1.25rem;
+    position: relative;
+}
+
+.discussImage-container {
+    z-index: -2;
+    margin-right: auto;
+}
+
+.discussImg {
+    width: 34rem;
+}
+
+.myybaKnowMore-description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    position: absolute;
+    text-align: right;
+    width: 58%;
+    height: 19rem;
+    z-index: 3;
+
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, .9), rgba(255, 255, 255, 1));
+}
