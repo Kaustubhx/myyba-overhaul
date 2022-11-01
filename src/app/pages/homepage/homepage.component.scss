@@ -10,7 +10,12 @@
 .container {
     max-width: 1240px !important;
 }
-
+#header{
+    position: fixed;
+    width: 100%;
+    background: white;
+    z-index: 9;
+}
 .discussImage-container {
     margin-right: auto;
 }

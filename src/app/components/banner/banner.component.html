@@ -1,21 +1,31 @@
 <ion-grid class="bannerWrapper">
+    <ion-row id="mainrow">
+        <ion-col size="1">
+
+        </ion-col>
+        <ion-col size="10">
+
     <ion-row class="upperBanner"></ion-row>
 
     <ion-grid class="middleBanner">
         <!-- //Right Section Banner (Main) -->
-        <ion-row class="middleBanner-carouselSection">
+        <ion-card class="middleBanner-carouselSection">
+            <ion-slides>
+                <ion-slide *ngFor="let x Of banners">
+                    <ion-grid>
+                    <ion-img [src]="x.src" class="object-contain w-96"></ion-img>
 
-            <ion-img src="/assets/images/bannerDevices.png" class="object-contain w-96"></ion-img>
-
-            <ion-text id="middleBanner-leftText" class="text-[#a1a1a1] uppercase w-72 text-center -mt-7 font-medium">
-                <ion-text class="text-white font-bold">Personalised </ion-text>online store & robust pos
-            </ion-text>
-
+                    <ion-text id="middleBanner-leftText" class="text-[#a1a1a1] uppercase w-72 text-center -mt-7 font-medium">
+                        <ion-text class="text-white font-bold">Personalised </ion-text>online store & robust pos
+                    </ion-text>
+                 
+                    </ion-grid>
+                </ion-slide>
+            </ion-slides>
             <ion-button color="translucent" class="btn-features">
                 View Features
             </ion-button>
-
-        </ion-row>
+        </ion-card>
 
         <!-- //Right Section Banner -->
         <ion-row class="middleBanner-loginSection">
@@ -51,4 +61,7 @@
         </ion-row>
     </ion-grid>
     <ion-row class="lowerBanner"></ion-row>
+    </ion-col>
+    <ion-col size="1"></ion-col>
+    </ion-row>
 </ion-grid>

@@ -1,10 +1,18 @@
-<ion-header class="headerWrapper">
+
+<ion-header *ngIf="!mobile"  class="headerWrapper">
     <ion-grid class="navbar">
-        <ion-row class="navbar_left">
+        <ion-row id="mainrow">
+            <ion-col size="1">
+    
+            </ion-col>
+            <ion-col size="10">
+                <ion-grid>
+                <ion-row>
+        <ion-col size="4" class="navbar_left">
             <ion-text class="text-lg font-bold">myyba</ion-text>
             <ion-text class="text-sm tracking-[0.4em]">shops</ion-text>
-        </ion-row>
-        <ion-row class="navbar_right space-x-8 uppercase font-bold">
+        </ion-col>
+        <ion-col size="8"  class="navbar_right space-x-8 uppercase font-bold">
             <ion-text class="hover-underline-animation">
                 Home
             </ion-text>
@@ -18,6 +26,53 @@
             <ion-text class="hover-underline-animation">
                 Contact
             </ion-text>
+        </ion-col>
+        </ion-row>
+        </ion-grid>
+        </ion-col>
+        <ion-col size="1">
+
+        </ion-col>
         </ion-row>
     </ion-grid>
 </ion-header>
+
+<ion-header *ngIf="mobile"  class="headerWrapper">
+    <ion-grid class="navbar">
+        <ion-row id="mainrow">
+            <ion-col size="1">
+    
+            </ion-col>
+            <ion-col size="10">
+                <ion-grid>
+                <ion-row>
+        <ion-col size="4" class="navbar_left">
+            <ion-text class="text-lg font-bold">myyba</ion-text>
+            <ion-text class="text-sm tracking-[0.4em]">shops</ion-text>
+        </ion-col>
+        <ion-col size="8"  class="navbar_right space-x-8 uppercase font-bold">
+            <ion-text class="hover-underline-animation">
+                Home
+            </ion-text>
+            <ion-text class="hover-underline-animation">
+                Products & Services
+            </ion-text>
+
+            <ion-text class="hover-underline-animation">
+                About
+            </ion-text>
+            <ion-text class="hover-underline-animation">
+                Contact1
+            </ion-text>
+        </ion-col>
+        </ion-row>
+        </ion-grid>
+        </ion-col>
+        <ion-col size="1">
+
+        </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-header>
+
+
