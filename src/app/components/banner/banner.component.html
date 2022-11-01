@@ -5,63 +5,64 @@
         </ion-col>
         <ion-col size="10">
 
-    <ion-row class="upperBanner"></ion-row>
 
-    <ion-grid class="middleBanner">
-        <!-- //Right Section Banner (Main) -->
-        <ion-card class="middleBanner-carouselSection">
-            <ion-slides>
-                <ion-slide *ngFor="let x Of banners">
-                    <ion-grid>
-                    <ion-img [src]="x.src" class="object-contain w-96"></ion-img>
+            <ion-grid class="middleBanner">
+                <!-- //Right Section Banner (Main) -->
+                <ion-card class="middleBanner-carouselSection">
+                    <ion-slides>
+                        <ion-slide *ngFor="let x Of banners">
+                            <ion-grid class="carouselContainer">
+                                <ion-img [src]="x.src" class="object-contain w-96"></ion-img>
 
-                    <ion-text id="middleBanner-leftText" class="text-[#a1a1a1] uppercase w-72 text-center -mt-7 font-medium">
-                        <ion-text class="text-white font-bold">Personalised </ion-text>online store & robust pos
-                    </ion-text>
-                 
-                    </ion-grid>
-                </ion-slide>
-            </ion-slides>
-            <ion-button color="translucent" class="btn-features">
-                View Features
-            </ion-button>
-        </ion-card>
+                                <ion-text id="middleBanner-leftText"
+                                    class="text-[#a1a1a1] uppercase w-72 text-center -mt-7 font-medium">
+                                    <ion-text class="text-white font-bold">Personalised </ion-text>online store & robust
+                                    pos
+                                </ion-text>
 
-        <!-- //Right Section Banner -->
-        <ion-row class="middleBanner-loginSection">
-            <ion-row class="loginSectionText">
-                <ion-text class="font-medium">What is Myyba Shops?</ion-text>
-                <ion-text class="font-bold italic border-b border-[#464545] border-dashed pb-3">It is everything your
-                    business needs to <ion-text class="text-[#2D2F7F]">succeed </ion-text> under a single roof
-                </ion-text>
-                <ion-text class="text-[#737373] text-[13px] pt-2">
-                    Enter your number to request a <ion-text class="italic font-bold">FREE</ion-text> demo
-                </ion-text>
-            </ion-row>
+                            </ion-grid>
+                        </ion-slide>
+                    </ion-slides>
+                    <ion-button color="translucent" class="btn-features">
+                        View Features
+                    </ion-button>
+                </ion-card>
 
-            <ion-row class="middleBanner-inputField">
-                <ion-row class="inputField-Container">
-                        <ion-input type="tel" class="inputPhone" [clearInput]="true" placeholder="PHONENUMBER">
-                        </ion-input>
-                    <ion-button color="purplePink" class="btn-reqDemo">
+                <!-- //Right Section Banner -->
+                <ion-row class="middleBanner-loginSection">
+                    <ion-row class="loginSectionText">
+                        <ion-text class="font-medium">What is Myyba Shops?</ion-text>
+                        <ion-text class="font-bold italic border-b border-[#464545] border-dashed pb-3">It is everything
+                            your
+                            business needs to <ion-text class="text-[#2D2F7F]">succeed </ion-text> under a single roof
+                        </ion-text>
+                        <ion-text class="text-[#737373] text-[13px] pt-2">
+                            Enter your number to request a <ion-text class="italic font-bold">FREE</ion-text> demo
+                        </ion-text>
+                    </ion-row>
+
+                    <ion-row class="middleBanner-inputField">
+                        <ion-row class="inputField-Container">
+                            <ion-input type="tel" class="inputPhone" [clearInput]="true" placeholder="PHONENUMBER">
+                            </ion-input>
+                            <ion-button color="purplePink" class="btn-reqDemo">
+                                <span>
+                                    Request Demo
+                                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                                </span>
+                            </ion-button>
+                        </ion-row>
+                    </ion-row>
+                    <ion-button color="whatsapp" class="btn-whatsapp">
                         <span>
-                            Request Demo
+                            Whatsapp us
                             <ion-icon name="chevron-forward-outline"></ion-icon>
                         </span>
                     </ion-button>
-                </ion-row>
-            </ion-row>
-            <ion-button color="whatsapp" class="btn-whatsapp">
-                <span>
-                    Whatsapp us
-                    <ion-icon name="chevron-forward-outline"></ion-icon>
-                </span>
-            </ion-button>
 
-        </ion-row>
-    </ion-grid>
-    <ion-row class="lowerBanner"></ion-row>
-    </ion-col>
-    <ion-col size="1"></ion-col>
+                </ion-row>
+            </ion-grid>
+        </ion-col>
+        <ion-col size="1"></ion-col>
     </ion-row>
 </ion-grid>

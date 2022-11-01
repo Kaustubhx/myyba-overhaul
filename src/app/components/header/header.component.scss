@@ -6,8 +6,6 @@
     width: 100%;
 }
 .headerWrapper {
-    padding: 1.5rem 0;
-    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -25,7 +23,7 @@
 .navbar_right{
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: flex-end;
     padding: 0;
 }
 .navbar_left {
