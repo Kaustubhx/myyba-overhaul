@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { HeaderComponent } from './components/header/header.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
+import { DataService } from './service/data.service.service';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { HomepageComponent } from './pages/homepage/homepage.component';
     AppRoutingModule,
     IonicModule.forRoot()
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

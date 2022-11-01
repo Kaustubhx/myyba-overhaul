@@ -5,7 +5,12 @@
     // padding: 0 1.25rem;
     position: relative;
 }
-
+#header{
+    position: fixed;
+    width: 100%;
+    background: white;
+    z-index: 9;
+}
 .discussImage-container {
     z-index: -2;
     margin-right: auto;
