@@ -5,7 +5,7 @@
         </ion-text>
     </ion-row>
     <ion-card class="storesMainContainer w-full h-[90vh]">
-        <ion-slides>
+        <ion-slides [options]="slideOpts">
             <ion-slide *ngFor="let store of stores">
                 <ion-grid class="storesCarouselContainer">
 
