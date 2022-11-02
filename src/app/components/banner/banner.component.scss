@@ -8,10 +8,10 @@
     align-items: center;
 }
 
-#mainrow{
+#mainrow {
     width: 100%;
     height: 35rem;
-    background: linear-gradient(to bottom,  white 0%,white 50%,black 50%,black 100%);
+    background: linear-gradient(to bottom, white 0%, white 50%, black 50%, black 100%);
 
     display: flex;
     align-items: center;
@@ -144,7 +144,6 @@ ion-button.ion-color-purplePink {
 ion-button.ion-color-whatsapp {
     --ion-color-base: linear-gradient(to left, #0DA340, #05752B, #00A037AB) !important;
 }
-
 
 ion-button {
     span {

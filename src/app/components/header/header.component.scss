@@ -2,10 +2,14 @@
     background: none; //disabled default header Shadow
 }
 
-#mainrow{
+#mainrow {
     width: 100%;
 }
+
 .headerWrapper {
+    display: flex;
+    justify-content: center;
+
     margin: 0 auto;
 }
 
@@ -20,12 +24,14 @@
         justify-content: space-between;
     }
 }
-.navbar_right{
+
+.navbar_right {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     padding: 0;
 }
+
 .navbar_left {
     display: flex;
     flex-direction: column;

@@ -8,13 +8,15 @@ import { HeaderComponent } from './components/header/header.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
 import { DataService } from './service/data.service.service';
+import { StoresComponent } from './components/stores/stores.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     BannerComponent,
-    HomepageComponent
+    HomepageComponent,
+    StoresComponent
   ],
   imports: [
     BrowserModule,

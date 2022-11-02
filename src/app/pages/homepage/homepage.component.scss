@@ -10,12 +10,14 @@
 .container {
     max-width: 1240px !important;
 }
-#header{
+
+#header {
     position: fixed;
     width: 100%;
     background: white;
     z-index: 9;
 }
+
 .discussImage-container {
     margin-right: auto;
 }
@@ -30,19 +32,26 @@
     }
 }
 
-.myybaKnowMore-description {
+.myybaKnowMore-Section {
     display: flex;
     justify-content: center;
+    align-items: flex-end;
     flex-direction: column;
 
     position: absolute;
     text-align: right;
-    width: 58%;
-    height: 19rem;
+    width: 65%;
+    height: 100%;
     z-index: 3;
-    padding-right: 1.5rem;
 
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, .9), rgba(255, 255, 255, 1));
+}
+
+.myybaKnowMoreQuestion {
+    width: 55%;
+
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 @media only screen and (min-width: 1280px) {
@@ -51,5 +60,26 @@
 
         padding-right: 0;
     }
+
+    .btn-knowMore {
+        width: 13rem;
+    }
+
+    .myybaKnowMoreQuestion {
+        width: 40%;
+    }
+
+}
+
+.btn-knowMore {
+    width: 9rem;
+}
+
+.btn-knowMore>span {
+    font-weight: 700;
+}
+
+ion-button.ion-color-whatsapp {
+    --ion-color-base: linear-gradient(to left, #0DA340, #05752B, #00A037AB) !important;
 
 }

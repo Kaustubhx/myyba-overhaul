@@ -11,13 +11,11 @@ export class BannerComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-  this.banners=[{
-    'src':"/assets/images/bannerDevices.png",
-    'text':'',
-    'button':''
-    
-  }]
+    this.banners = [{
+      'src': "/assets/images/bannerDevices.png",
+      'text': '',
+    }]
   }
-  
+
 
 }

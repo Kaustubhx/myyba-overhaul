@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { storeImage } from 'src/interfaces/storeImage';
 
 @Injectable({
   providedIn: 'root'
@@ -9,7 +10,26 @@ export class DataService {
   constructor() { }
 
 
-  getMobile(){
+  getMobile() {
     return DataService.mobile
   }
+
+  storeImages: storeImage[] = [
+    {
+      img: '/assets/images/FashionStore.png',
+      storeType: 'Fashion',
+    },
+    {
+      img: '/assets/images/AutomobileStore.png',
+      storeType: 'Automobile',
+    },
+    {
+      img: '/assets/images/CafeStore.png',
+      storeType: 'Cafe / Restaurant',
+    },
+    {
+      img: '/assets/images/VeggiesStore.png',
+      storeType: 'Fruits & Vegetables',
+    },
+  ]
 }
