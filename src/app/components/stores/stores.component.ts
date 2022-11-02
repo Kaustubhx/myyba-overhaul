@@ -39,6 +39,10 @@ export class StoresComponent implements OnInit {
       1024: {
         slidesPerView: 4,
         spaceBetween: 0
+      },
+      1280: {
+        slidesPerView: 5,
+        spaceBetween: 0
       }
     }
   };
