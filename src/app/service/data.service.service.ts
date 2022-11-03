@@ -31,5 +31,9 @@ export class DataService {
       img: '/assets/images/VeggiesStore.png',
       storeType: 'Fruits & Vegetables',
     },
+    {
+      img: '/assets/images/FashionStore.png',
+      storeType: 'Fruits & Vegetables',
+    },
   ]
 }

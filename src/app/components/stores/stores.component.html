@@ -4,17 +4,20 @@
             PERSONALISED ONLINE STORE & ROBUST POS
         </ion-text>
     </ion-row>
-    <ion-card class="storesMainContainer w-full h-[90vh]">
-        <ion-slides [options]="options">
+    <ion-card class="storesMainContainer">
+        <ion-slides [options]="slideOpts">
             <ion-slide *ngFor="let store of stores">
                 <ion-grid class="storesCarouselContainer">
 
-                    <ion-img src="{{store.img}}" class="w-56 h-[28rem]"></ion-img>
+                    <ion-img src="{{store.img}}" class="w-56 h-[28rem] object-contain"></ion-img>
+                    <ion-text class="mt-9 text-black font-medium text-xl uppercase">{{store.storeType}}</ion-text>
 
                 </ion-grid>
             </ion-slide>
         </ion-slides>
-
-
     </ion-card>
+    <ion-row class="storeTypesOverview border">
+        <ion-text class="text-[#2826A1] font-bold text-xl uppercase mt-5">E-commerce Website</ion-text>
+        <ion-text class="">Get a power-packed e-commerce website & impress your customers with a beautiful store.</ion-text>
+    </ion-row>
 </ion-grid>

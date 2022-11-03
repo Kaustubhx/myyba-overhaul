@@ -1,168 +1,41 @@
-.bannerWrapper {
-    position: relative;
-    height: 35rem;
-
-    padding: 0;
-
+.banner-wrapper {
     display: flex;
-    align-items: center;
+    justify-content: center;
+
+    background: #EFEFEF;
 }
 
-#mainrow {
-    width: 100%;
-    height: 35rem;
-    background: linear-gradient(to bottom, white 0%, white 50%, black 50%, black 100%);
-
+.bannerContainer {
     display: flex;
     align-items: center;
-}
-
-.middleBanner {
-    position: relative;
-    height: 22rem;
-    z-index: 3;
-    color: black;
-    inset: 0 auto;
-    // padding-right: 2.7rem;
-
-    display: flex;
+    flex: 0.75;
     justify-content: space-between;
+
+    margin-top: 4rem;
+    border-bottom: 1px black dashed;
 }
 
-@media only screen and (min-width: 1024px) {
-    .middleBanner {
-        padding-right: 5px;
-        padding: 0;
-        // margin-left: 4rem;
-    }
+.inputFieldSection{
+    border-top: 1px #C2C2C2 dashed;
 }
 
-.middleBanner-carouselSection {
+.reqDemoSection {
+    max-width: 23rem;
+}
+
+.demoButton {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background: none;
-    border: none;
-    box-shadow: none;
-}
 
-.carouselContainer {
+    background: black;
+    border-radius: 5px;
     max-width: 24rem;
+    padding: .5rem;
+    margin-top: .5rem;
 }
 
-.btn-features {
-    width: 100%;
-    max-width: 18rem;
-    background: rgba(128, 128, 128, 0.32) 32%;
-
-    border: 0.5px solid #FFFFFF;
-    border-radius: 5px;
-    font-weight: 600;
-    // letter-spacing: normal;
+ion-button.ion-color-black-demo{
+    --background: #000;
+    font-size: 1.125rem;
     letter-spacing: -0.025em;
-}
-
-ion-button.ion-color-translucent {
-    --ion-color-base: linear-gradient(to right, rgba(128, 128, 128, 0.322) 1%, rgba(255, 255, 255, 0)) !important;
-}
-
-.btn-features>ion-button {
-    background-color: #fff;
-    border-color: red;
-}
-
-.middleBanner-loginSection {
-    // margin-right: 4rem;
-    max-width: 19rem;
-    // margin: 0 auto;
-
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-
-.loginSectionText {
-    display: flex;
-    flex-direction: column;
-
-    padding-top: 3rem;
-    padding-bottom: .5rem;
-}
-
-.middleBanner-inputField {
-    padding-bottom: .3rem;
-    width: 100%;
-
-    border-bottom-width: 1px;
-    border-color: #C4C4C4;
-    border-style: dashed;
-}
-
-.inputField-Container {
-    background: #DADADA;
-    border-radius: 5px;
-    width: 100%;
-    margin-bottom: .75rem;
-
-    display: flex;
-    flex-direction: column;
-}
-
-.inputPhone {
-    background: #fff;
-
-    margin: 4px 2px;
-    width: 298px;
-
-    border-radius: 5px;
-}
-
-.inputPhone .native-input.sc-ion-input-md {
-    padding: 0;
-}
-
-.btn-reqDemo {
-    font-weight: 700;
-    letter-spacing: -0.025em;
-}
-
-ion-button.ion-color-purplePink {
-    --ion-color-base: linear-gradient(to right, #0010A0, #580DA3) !important;
-}
-
-.btn-whatsapp {
-    width: 100%;
-    margin-top: .75rem;
-}
-
-.btn-whatsapp>span {
-    font-weight: 700;
-    letter-spacing: -0.025em;
-}
-
-ion-button.ion-color-whatsapp {
-    --ion-color-base: linear-gradient(to left, #0DA340, #05752B, #00A037AB) !important;
-}
-
-ion-button {
-    span {
-        display: flex;
-        align-items: center;
-
-        text-align: left;
-        width: 100%;
-    }
-}
-
-@media only screen and (min-width: 1024px) {
-    .middleBanner-loginSection {
-        margin: 0;
-    }
-}
-
-@media only screen and (min-width: 1280px) {
-    .middleBanner {
-        justify-content: space-between;
-    }
 }
