@@ -1,0 +1,33 @@
+.features_details-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.featuresDetails-Container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex: .75;
+}
+
+.featureDetails {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex: 0.75;
+}
+
+.featureDetails:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.featureDetails:nth-child(odd) {
+    flex-direction: row;
+}
+
+.detailsText {
+    display: flex;
+    flex-direction: column;
+    max-width: 26rem;
+}
