@@ -17,4 +17,7 @@ export class StoresComponent implements OnInit {
     this.stores = this.storeDetail.storeImages
     console.log(this.stores)
   }
+  options={
+    slidesPerView:4
+  }
 }
