@@ -2,52 +2,40 @@
     background: none; //disabled default header Shadow
 }
 
-#mainrow {
-    width: 100%;
-}
-
-.headerWrapper {
+.header-wrapper {
     display: flex;
     justify-content: center;
 
-    margin: 0 auto;
+    background: white;
 }
 
-.navbar {
+.headerContainer {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    flex: 0.75;
+
+    padding: 1rem 0;
 }
 
-@media only screen and (min-width: 1280px) {
-    .navbar {
-        justify-content: space-between;
-    }
-}
-
-.navbar_right {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding: 0;
-}
-
-.navbar_left {
+.webTitleSection {
     display: flex;
     flex-direction: column;
+
     cursor: pointer;
 }
 
+.webNaviSection {
+    display: flex;
+}
+
 .hover-underline-animation {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
     position: relative;
     color: black;
     transition: color 0.25s ease-out;
     cursor: pointer;
-}
-
-.hover-underline-animation:hover {
-    color: #303297;
 }
 
 .hover-underline-animation:after {
@@ -58,7 +46,7 @@
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #303297;
+    background-color: black;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }

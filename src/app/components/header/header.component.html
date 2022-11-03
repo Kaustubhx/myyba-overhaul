@@ -1,78 +1,19 @@
-
-<ion-header *ngIf="!mobile"  class="headerWrapper">
-    <ion-grid class="navbar">
-        <ion-row id="mainrow">
-            <ion-col size="1">
-    
-            </ion-col>
-            <ion-col size="10">
-                <ion-grid>
-                <ion-row>
-        <ion-col size="4" class="navbar_left">
-            <ion-text class="text-lg font-bold">myyba</ion-text>
-            <ion-text class="text-sm tracking-[0.4em]">shops</ion-text>
-        </ion-col>
-        <ion-col size="8"  class="navbar_right space-x-8 uppercase font-bold">
-            <ion-text class="hover-underline-animation">
-                Home
-            </ion-text>
-            <ion-text class="hover-underline-animation">
-                Products & Services
-            </ion-text>
-
-            <ion-text class="hover-underline-animation">
-                About
-            </ion-text>
-            <ion-text class="hover-underline-animation">
-                Contact
-            </ion-text>
-        </ion-col>
+<ion-header class="header-wrapper">
+    <ion-grid class="headerContainer">
+        <ion-row class="webTitleSection">
+            <ion-text class="text-2xl font-bold">myyba</ion-text>
+            <ion-text class="text-sm font-light tracking-[0.7em] leading-[0.25rem]">shops</ion-text>
         </ion-row>
-        </ion-grid>
-        </ion-col>
-        <ion-col size="1">
-
-        </ion-col>
+        <ion-row class="webNaviSection space-x-7 uppercase">
+            <ion-text title="Home" class="text-lg hover-underline-animation">Home</ion-text>
+            <ion-text title="Products & Service" class="text-lg hover-underline-animation">
+                Products & Service
+                <ion-icon name="chevron-down-outline"></ion-icon>
+            </ion-text>
+            <ion-text title="About" class="text-lg hover-underline-animation">About</ion-text>
+            <ion-text title="Careers" class="text-lg hover-underline-animation">Careers</ion-text>
         </ion-row>
+
     </ion-grid>
+
 </ion-header>
-
-<ion-header *ngIf="mobile"  class="headerWrapper">
-    <ion-grid class="navbar">
-        <ion-row id="mainrow">
-            <ion-col size="1">
-    
-            </ion-col>
-            <ion-col size="10">
-                <ion-grid>
-                <ion-row>
-        <ion-col size="4" class="navbar_left">
-            <ion-text class="text-lg font-bold">myyba</ion-text>
-            <ion-text class="text-sm tracking-[0.4em]">shops</ion-text>
-        </ion-col>
-        <ion-col size="8"  class="navbar_right space-x-8 uppercase font-bold">
-            <ion-text class="hover-underline-animation">
-                Home
-            </ion-text>
-            <ion-text class="hover-underline-animation">
-                Products & Services
-            </ion-text>
-
-            <ion-text class="hover-underline-animation">
-                About
-            </ion-text>
-            <ion-text class="hover-underline-animation">
-                Contact1
-            </ion-text>
-        </ion-col>
-        </ion-row>
-        </ion-grid>
-        </ion-col>
-        <ion-col size="1">
-
-        </ion-col>
-        </ion-row>
-    </ion-grid>
-</ion-header>
-
-
