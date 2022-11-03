@@ -7,7 +7,8 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    flex: .75;
+    flex: .55;
+    margin: 3rem 0;
 }
 
 .featureDetails {
@@ -15,7 +16,7 @@
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
-    flex: 0.75;
+    // flex: .75;
 }
 
 .featureDetails:nth-child(even) {

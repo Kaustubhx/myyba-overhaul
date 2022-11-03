@@ -1,0 +1,40 @@
+.myybaPlans-Wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.myybaPlans-Container {
+    display: flex;
+    flex-direction: column;
+}
+
+.containerTitle {
+    background: #EFEFEF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plansSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 47vh;
+    width: 200vh;
+
+    background: black;
+}
+
+.myybaPlansCarousel {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    border: 1px solid white;
+    padding: 4rem;
+}
+
+ion-button.ion-color-backplan-btn {
+    --background: black;
+    border: 1px solid white;
+}
