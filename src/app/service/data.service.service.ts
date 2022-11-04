@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { featureDetail } from 'src/interfaces/feature&Details';
+import { serviceList } from 'src/interfaces/servicesList';
 import { storeImage } from 'src/interfaces/storeImage';
 
 @Injectable({
@@ -41,9 +42,9 @@ export class DataService {
   featureSectionData: featureDetail[] = [
     {
       questionTxt: 'YOUR ENTIRE STORE INTO A QR CODE?',
-      // toBeBold: '',
+      // serviceName: '',
       detailAns: 'Yes, get all the products you sell into an all in 1 QR code and share it with your customers to place order online. Customers can scan the code and visit your website to place an order',
-      img: '/assets/newImages/QRScanning.png'
+      img: '/serviceSummarys/newImages/QRScanning.serviceImg'
     },
     {
       questionTxt: 'More than 150 Payment Options for your customers',
@@ -74,22 +75,61 @@ export class DataService {
   myybaShopPlans = [
     {
       percentOff: '',
-      price: ' ₹ 999*',
       discountPrice: '',
+      actualPrice: '₹ 999*',
       span: '1 MONTH PLAN',
     },
     {
       percentOff: '5% OFF',
-      price: ' ₹2,999',
       discountPrice: '₹2,849*',
+      actualPrice: '₹2,999',
       span: '3 MONTHS PLAN',
     },
     {
-      percentOff: '',
-      price: ' ₹ 2,999*',
-      discountPrice: '',
+      percentOff: '10% OFF',
+      discountPrice: '₹ 5,999*',
+      actualPrice: '₹ 5,399*',
       span: '3 MONTH PLAN',
-      recommende: true,
+      recommended: true,
+    },
+    {
+      percentOff: '15% OFF',
+      discountPrice: '₹11,999',
+      actualPrice: '₹10,199*',
+      span: '3 MONTH PLAN',
+    },
+  ]
+
+  serviceListData: serviceList[] = [
+    {
+      serviceName: 'WHATSAPP AND SMS CAMPAIGNS',
+      // toBeBold: '',
+      serviceSummary: 'Managing and growing your brand reputation has never been this easy. With Bizz Buddy by your side, managing all your social media platforms does not feel like a task. How? click the button below to get a free demo',
+      serviceImg: '/assets/newImages/ServiceImage-1.png'
+    },
+    {
+      serviceName: 'INFLUENCER MARKETING',
+      // toBeBold: '150 Payment Options',
+      serviceSummary: 'Managing and growing your brand reputation has never been this easy. With Bizz Buddy by your side, managing all your social media platforms does not feel like a task. How? click the button below to get a free demo',
+      serviceImg: '/assets/newImages/ServiceImage-1.png'
+    },
+    {
+      serviceName: 'SOCIAL MEDIA MANAGEMENT',
+      // toBeBold: 'SEAMLESS',
+      serviceSummary: 'Managing and growing your brand reputation has never been this easy. With Bizz Buddy by your side, managing all your social media platforms does not feel like a task. How? click the button below to get a free demo',
+      serviceImg: '/assets/newImages/ServiceImage-1.png'
+    },
+    {
+      serviceName: 'TARGETED MARKETING CAMPAIGNS',
+      // toBeBold: 'WHATSAPP AND SMS',
+      serviceSummary: 'Managing and growing your brand reputation has never been this easy. With Bizz Buddy by your side, managing all your social media platforms does not feel like a task. How? click the button below to get a free demo',
+      serviceImg: '/assets/newImages/ServiceImage-1.png'
+    },
+    {
+      serviceName: 'OFFLINE MARKETING',
+      // toBeBold: 'eASY SALES',
+      serviceSummary: 'Managing and growing your brand reputation has never been this easy. With Bizz Buddy by your side, managing all your social media platforms does not feel like a task. How? click the button below to get a free demo',
+      serviceImg: '/assets/newImages/ServiceImage-1.png'
     },
   ]
 }

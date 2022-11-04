@@ -1,0 +1,40 @@
+.ourServices-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.ourServices-Container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex: .55;
+    margin: 3rem 0;
+}
+
+.ourServices {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    // flex: .75;
+}
+
+.ourServices:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.ourServices:nth-child(odd) {
+    flex-direction: row;
+}
+
+.ourServicesText {
+    display: flex;
+    flex-direction: column;
+    max-width: 26rem;
+}
+
+ion-button.ion-color-service-black-demo {
+    --background: red;
+    font-size: 1.125rem;
+    letter-spacing: -0.025em;
+}

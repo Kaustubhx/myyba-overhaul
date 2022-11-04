@@ -16,4 +16,9 @@ export class MyybaplansComponent implements OnInit {
     this.plans = this.myybaPlans.myybaShopPlans
   }
 
+  slideOpts = {
+    slidesPerView: 4,
+    spaceBetween: 10,
+  };
+
 }

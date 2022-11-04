@@ -11,6 +11,7 @@ import { DataService } from './service/data.service.service';
 import { FeaturesComponent } from './components/features/features.component';
 import { MyybaplansComponent } from './components/myybaplans/myybaplans.component';
 import { StoresComponent } from './components/storestypes/stores.component';
+import { MyybaservicesComponent } from './components/myybaservices/myybaservices.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { StoresComponent } from './components/storestypes/stores.component';
     HomepageComponent,
     StoresComponent,
     FeaturesComponent,
-    MyybaplansComponent
+    MyybaplansComponent,
+    MyybaservicesComponent,
   ],
   imports: [
     BrowserModule,
