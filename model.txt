@@ -1,0 +1,92 @@
+topclients
+{
+  "id": 0,
+  "image": "string",
+  "name": "string",
+  "path": "string",
+  "position": 0
+}
+
+metadata
+{
+  "address": "string",
+  "bannerimage": "string",
+  "bannerpath": "string",
+  "id": 0,
+  "logo": "string",
+  "logopath": "string",
+  "mail": "string",
+  "meta": "string",
+  "title": "string",
+  "whatsapp_number": "string",
+  "youtube_video": "string"
+}
+
+feature
+{
+  "description": "string",
+  "id": 0,
+  "image": "string",
+  "name": "string",
+  "path": "string",
+  "position": 0
+}
+
+
+services
+{
+  "description": "string",
+  "id": 0,
+  "image": "string",
+  "name": "string",
+  "path": "string",
+  "position": 0
+
+}
+
+shoptype
+{
+
+  "id": 0,
+  "image": "string",
+  "name": "string",
+  "path": "string",
+  "position": 0
+
+}
+
+subscription
+{
+  "amount": 0,
+  "id": 0,
+  "isHighlighted": true,
+  "name": "string",
+  "position": 0,
+  "tag1": "string",
+  "tag2": "string"
+}
+
+team
+{
+
+  "description": "string",
+  "designation": "string",
+  "id": 0,
+  "image": "string",
+  "linkedIn": "string",
+  "name": "string",
+  "path": "string",
+  "position": 0
+
+}
+
+testimony
+{
+  "id": 0,
+  "image": "string",
+  "name": "string",
+"desc":"string", 
+ "path": "string",
+  "position": 0,
+  "youtube_video": "string"
+}
