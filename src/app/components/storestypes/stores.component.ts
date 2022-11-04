@@ -15,7 +15,7 @@ export class StoresComponent implements OnInit {
 
   ngOnInit(): void {
     this.stores = this.storeDetail.storeImages
-    console.log(this.stores)
+    // console.log(this.stores)
   }
 
   slideOpts = {

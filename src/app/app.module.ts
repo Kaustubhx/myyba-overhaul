@@ -8,7 +8,9 @@ import { HeaderComponent } from './components/header/header.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
 import { DataService } from './service/data.service.service';
-import { StoresComponent } from './components/stores/stores.component';
+import { FeaturesComponent } from './components/features/features.component';
+import { MyybaplansComponent } from './components/myybaplans/myybaplans.component';
+import { StoresComponent } from './components/storestypes/stores.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { StoresComponent } from './components/stores/stores.component';
     HeaderComponent,
     BannerComponent,
     HomepageComponent,
-    StoresComponent
+    StoresComponent,
+    FeaturesComponent,
+    MyybaplansComponent
   ],
   imports: [
     BrowserModule,
