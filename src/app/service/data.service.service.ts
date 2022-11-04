@@ -70,4 +70,26 @@ export class DataService {
       img: '/assets/newImages/Saletracking.png'
     },
   ]
+
+  myybaShopPlans = [
+    {
+      percentOff: '',
+      price: ' ₹ 999*',
+      discountPrice: '',
+      span: '1 MONTH PLAN',
+    },
+    {
+      percentOff: '5% OFF',
+      price: ' ₹2,999',
+      discountPrice: '₹2,849*',
+      span: '3 MONTHS PLAN',
+    },
+    {
+      percentOff: '',
+      price: ' ₹ 2,999*',
+      discountPrice: '',
+      span: '3 MONTH PLAN',
+      recommende: true,
+    },
+  ]
 }

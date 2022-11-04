@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from 'src/app/service/data.service.service';
 
 @Component({
   selector: 'MyybaPlans',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MyybaplansComponent implements OnInit {
 
-  constructor() { }
+  constructor(private myybaPlans: DataService) { }
+
+  plans: any
 
   ngOnInit(): void {
+    this.plans = this.myybaPlans.myybaShopPlans
   }
 
 }

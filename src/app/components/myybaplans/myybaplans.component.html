@@ -7,11 +7,18 @@
         </ion-row>
         <ion-card class="plansSection">
             <!-- <ion-slides>
-                <ion-slide>
-                    <ion-row class="myybaPlansCarousel">
-                        <ion-text class="uppercase">
-                            1 month plan
+                <ion-slide *ngFor="let plan of plans">
+                    <ion-row [ngClass]="{'border-gradient-recommended': plan.recommende==true}"
+                        class="myybaPlansCarousel">
+                        <ion-text id="planSpan" class="uppercase text-2xl font-semibold text-[#FFDC5F]">
+                            {{plan.span}}
                         </ion-text>
+                        <ion-text id="planPrice" class="text-3xl text-white font-bold">
+                            {{plan.price}}
+                        </ion-text>
+                        <ion-button color="backplan-btn" class="plan-btn w-[90%]">
+                            Select a plan
+                        </ion-button>
                     </ion-row>
                 </ion-slide>
             </ion-slides> -->
@@ -19,10 +26,15 @@
                 <ion-text id="planSpan" class="uppercase text-2xl font-semibold text-[#FFDC5F]">
                     1 month plan
                 </ion-text>
-                <ion-text id="planPrice" class="text-3xl text-white font-bold">
-                    999*
-                </ion-text>
-                <ion-button color="backplan-btn" class="plan-btn">
+                <ion-row id="planPrices" class="flex flex-col items-center">
+                    <ion-text id="discountedPrice" class="text-xl font-semibold line-through">
+                        ₹2,999
+                    </ion-text>
+                    <ion-text id="price" class="text-2xl text-white font-bold">
+                        ₹2,849*
+                    </ion-text>
+                </ion-row>
+                <ion-button color="backplan-btn" class="plan-btn w-[90%]">
                     Select a plan
                 </ion-button>
             </ion-row>
