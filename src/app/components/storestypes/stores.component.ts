@@ -12,7 +12,6 @@ export class StoresComponent implements OnInit {
 
   stores: any
 
-
   ngOnInit(): void {
     this.stores = this.storeDetail.storeImages
     // console.log(this.stores)

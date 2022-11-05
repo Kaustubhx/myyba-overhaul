@@ -1,4 +1,5 @@
-import { Injectable } from '@angular/core';
+import { Injectable, ViewChild } from '@angular/core';
+import { IonContent } from '@ionic/angular';
 import { featureDetail } from 'src/interfaces/feature&Details';
 import { serviceList } from 'src/interfaces/servicesList';
 import { storeImage } from 'src/interfaces/storeImage';
@@ -7,10 +8,16 @@ import { storeImage } from 'src/interfaces/storeImage';
   providedIn: 'root'
 })
 export class DataService {
+  @ViewChild(IonContent, { static: false })
   static mobile: boolean;
 
   constructor() { }
 
+  content: IonContent | any
+  scrollToLabel(label: any) {
+    var titleELe = document.getElementById(label);
+    this.content.scrollToPoint(0, titleELe?.offsetTop, 1000);
+  }
 
   getMobile() {
     return DataService.mobile
@@ -44,7 +51,7 @@ export class DataService {
       questionTxt: 'YOUR ENTIRE STORE INTO A QR CODE?',
       // serviceName: '',
       detailAns: 'Yes, get all the products you sell into an all in 1 QR code and share it with your customers to place order online. Customers can scan the code and visit your website to place an order',
-      img: '/serviceSummarys/newImages/QRScanning.serviceImg'
+      img: '/assets/newImages/QRScanning.png'
     },
     {
       questionTxt: 'More than 150 Payment Options for your customers',

@@ -1,13 +1,25 @@
-<ion-content>
+<ion-content [scrollEvents]="true">
     <Header id="header"></Header>
 
     <Banner></Banner>
-    
+
     <Stores></Stores>
-    
+
     <Features></Features>
 
     <MyybaPlans></MyybaPlans>
 
+    <ion-row class="serviceSectionTitle">
+        <ion-text class="uppercase text-lg font-bold">
+            Our Services
+        </ion-text>
+    </ion-row>
+
     <Myybaservices></Myybaservices>
+
+    <Bussinesspartners></Bussinesspartners>
+
+    <!-- <Testimony></Testimony> -->
+
+    <Footer></Footer>
 </ion-content>

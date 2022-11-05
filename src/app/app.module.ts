@@ -12,6 +12,9 @@ import { FeaturesComponent } from './components/features/features.component';
 import { MyybaplansComponent } from './components/myybaplans/myybaplans.component';
 import { StoresComponent } from './components/storestypes/stores.component';
 import { MyybaservicesComponent } from './components/myybaservices/myybaservices.component';
+import { BussinesspartnersComponent } from './components/bussinesspartners/bussinesspartners.component';
+import { TestimonyComponent } from './components/testimony/testimony.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +26,9 @@ import { MyybaservicesComponent } from './components/myybaservices/myybaservices
     FeaturesComponent,
     MyybaplansComponent,
     MyybaservicesComponent,
+    BussinesspartnersComponent,
+    TestimonyComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
