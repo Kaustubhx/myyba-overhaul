@@ -8,15 +8,12 @@ import { ApiserviceService } from 'src/app/service/apiservice.service';
 })
 export class HomepageComponent implements OnInit {
 
-  constructor(private apiService:ApiserviceService) { }
-data:any
+  constructor(private apiService: ApiserviceService) { }
+  data: any
   ngOnInit(): void {
 
-    this.apiService.getData().subscribe(res=>{
-      this.data=res
+    this.apiService.getData().subscribe(res => {
+      this.data = res
     })
-    
   }
- 
-
 }
