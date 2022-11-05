@@ -11,7 +11,7 @@ export class StoresComponent implements OnInit {
   constructor(private storeDetail: DataService) { }
 
   stores: any
-@Input() data :any;
+  @Input() data: any;
 
   ngOnInit(): void {
     this.stores = this.data

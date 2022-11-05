@@ -43,6 +43,4 @@ data:any
     window.location.href="tel:"+this.data.metadata[0].whatsapp_number
 
   }
- 
-
 }

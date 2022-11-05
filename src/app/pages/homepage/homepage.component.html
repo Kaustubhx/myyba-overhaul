@@ -4,10 +4,16 @@
     <Banner   [data]="data.metadata[0]" ></Banner>
     
     <Stores [data]="data.shoptype"></Stores>
-    
+
     <Features [data]="data.feature"></Features>
 
     <MyybaPlans [data]="data.subscriptions"></MyybaPlans>
+
+    <ion-row class="serviceSectionTitle">
+        <ion-text class="uppercase text-lg font-bold">
+            Our Services
+        </ion-text>
+    </ion-row>
 
     <Myybaservices [data]="data.services"></Myybaservices>
     <Bussinesspartners [data]="data.client"></Bussinesspartners>
