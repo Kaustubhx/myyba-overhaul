@@ -12,6 +12,8 @@ import { FeaturesComponent } from './components/features/features.component';
 import { MyybaplansComponent } from './components/myybaplans/myybaplans.component';
 import { StoresComponent } from './components/storestypes/stores.component';
 import { MyybaservicesComponent } from './components/myybaservices/myybaservices.component';
+import { ApiserviceService } from './service/apiservice.service';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -27,9 +29,10 @@ import { MyybaservicesComponent } from './components/myybaservices/myybaservices
   imports: [
     BrowserModule,
     AppRoutingModule,
-    IonicModule.forRoot()
+    IonicModule.forRoot(),
+    HttpClientModule
   ],
-  providers: [DataService],
+  providers: [DataService,ApiserviceService,HttpClient],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

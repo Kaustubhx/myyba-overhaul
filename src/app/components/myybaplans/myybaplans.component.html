@@ -9,28 +9,28 @@
             <ion-slides [options]="slideOpts">
                 <ion-slide *ngFor="let plan of plans">
                     <ion-row [ngClass]="{'myyba-plan-recommended': plan.recommended==true}" class="myybaPlansCarousel">
-                        <ion-text [ngClass]="{'discountPercentage-recommended': plan.recommended == true}"
-                            *ngIf="plan.percentOff !== '' " class="discountPercentage">
-                            {{plan.percentOff}}
+                        <ion-text  [ngClass]="{'discountPercentage-recommended': plan.tag2!=null && plan.tag2 != ''}"
+                            *ngIf="plan.tag1!=null && plan.tag1 !== '' " class="discountPercentage">
+                            {{plan.tag1}}
                         </ion-text>
                         <ion-text id="planSpan" class="uppercase text-2xl font-semibold text-[#FFDC5F]">
-                            {{plan.span}}
+                            {{plan.name}}
                         </ion-text>
                         <ion-row id="planPrices" class="flex flex-col items-center">
-                            <ion-text id="discountedPrice" class="text-xl font-semibold line-through">
-                                {{plan.discountPrice}}
+                            <ion-text *ngIf="plan.selling_amount<plan.amount" id="discountedPrice" class="text-xl font-semibold line-through">
+                                {{plan.amount}}
                             </ion-text>
                             <ion-text id="price" class="text-2xl text-white font-bold">
-                                {{plan.actualPrice}}
+                                {{plan.selling_amount}}
                             </ion-text>
                         </ion-row>
-                        <ion-button color="{{plan.recommended == true ? 'recommended_btn' : 'blackplan_btn'}}"
+                        <ion-button color="{{plan.tag2!=null && plan.tag2 != '' ? 'recommended_btn' : 'blackplan_btn'}}"
                             class="plan-btn w-[90%]">
                             Select plan
                         </ion-button>
-                        <ion-text *ngIf="plan.recommended == true"
+                        <ion-text *ngIf="plan.tag2!=null && plan.tag2 != ''"
                             class="bg-[#FFDC5F] text-black px-3 rounded-b-md uppercase text-sm font-bold absolute bottom-0 -mb-5">
-                            Recommended
+                            {{plan.tag2}}
                         </ion-text>
                     </ion-row>
                 </ion-slide>

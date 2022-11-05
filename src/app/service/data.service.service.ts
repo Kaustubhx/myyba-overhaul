@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { featureDetail } from 'src/interfaces/feature&Details';
 import { serviceList } from 'src/interfaces/servicesList';
 import { storeImage } from 'src/interfaces/storeImage';
+import { ApiserviceService } from './apiservice.service';
 
 @Injectable({
   providedIn: 'root'
@@ -15,6 +16,7 @@ export class DataService {
   getMobile() {
     return DataService.mobile
   }
+  
 
   storeImages: storeImage[] = [
     {

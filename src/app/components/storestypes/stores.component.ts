@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { DataService } from 'src/app/service/data.service.service';
 
 @Component({
@@ -11,10 +11,10 @@ export class StoresComponent implements OnInit {
   constructor(private storeDetail: DataService) { }
 
   stores: any
-
+@Input() data :any;
 
   ngOnInit(): void {
-    this.stores = this.storeDetail.storeImages
+    this.stores = this.data
     // console.log(this.stores)
   }
 

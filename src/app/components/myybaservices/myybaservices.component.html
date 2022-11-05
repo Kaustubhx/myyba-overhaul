@@ -2,18 +2,16 @@
     <ion-row class="ourServices-Container space-y-7">
         <ion-row class="ourServices" *ngFor="let ourService of ourServices">
             <ion-row class="ourServicesText space-y-5">
-                <ion-text class="text-xl font-bold uppercase">
-                    {{ourService.serviceName}}
-                </ion-text>
+              
                 <ion-text class="text-lg">
-                    {{ourService.serviceSummary}}
+                    {{ourService.description}}
                 </ion-text>
                 <ion-button color="service-black-demo" class="service-demo-btn">
                     Take a free demo
                     <!-- <ion-icon name="chevron-forward-outline"></ion-icon> -->
                 </ion-button>
             </ion-row>
-            <ion-img [src]="ourService.serviceImg"></ion-img>
+            <ion-img [src]="ourService.image"></ion-img>
         </ion-row>
     </ion-row>
 </ion-grid>
