@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  HOST:"https://stagingapi.myyba.com/api"
+  HOST:""
 };
 
 /*
