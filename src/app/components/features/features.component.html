@@ -1,15 +1,12 @@
-<ion-grid class="features_details-wrapper">
+<ion-grid class="features_details-wrapper" *ngIf="featureAndDetails!=null">
     <ion-row class="featuresDetails-Container space-y-7">
         <ion-row class="featureDetails" *ngFor="let featureDetail of featureAndDetails">
             <ion-row class="detailsText space-y-5">
-                <ion-text class="font-medium text-xl uppercase">
-                    {{featureDetail.questionTxt}}
-                </ion-text>
                 <ion-text class="text-lg">
-                    {{featureDetail.detailAns}}
+                    {{featureDetail.description}}
                 </ion-text>
             </ion-row>
-            <ion-img [src]="featureDetail.img"></ion-img>
+            <ion-img [src]="featureDetail.image"></ion-img>
         </ion-row>
     </ion-row>
 </ion-grid>

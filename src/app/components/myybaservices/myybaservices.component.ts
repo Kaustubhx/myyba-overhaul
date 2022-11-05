@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { DataService } from 'src/app/service/data.service.service';
 
 @Component({
@@ -11,9 +11,10 @@ export class MyybaservicesComponent implements OnInit {
   constructor(private serviceList: DataService) { }
 
   ourServices: any;
-
+@Input() data:any
   ngOnInit(): void {
-    this.ourServices = this.serviceList.serviceListData
+
+    this.ourServices = this.data
   }
 
 }

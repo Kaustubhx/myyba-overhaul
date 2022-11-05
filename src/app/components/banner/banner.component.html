@@ -1,7 +1,7 @@
 <ion-grid class="banner-wrapper">
     <ion-row class="bannerContainer">
         <ion-row class="imgSection">
-            <ion-img src="/assets/newImages/Handshake.png"></ion-img>
+            <ion-img [src]="data.bannerimage"></ion-img>
         </ion-row>
         <ion-row class="reqDemoSection">
             <ion-text class="text-2xl mb-3">
@@ -14,7 +14,8 @@
                     Enter your number to request a <ion-text class="font-bold text-black italic">FREE</ion-text> demo
                 </ion-text>
                 <ion-row class="demoButton">
-                    <ion-input type="tel" placeholder="Please enter your phone number" class="bg-white w-[22rem] rounded-sm"></ion-input>
+                    <ion-input type="tel" placeholder="Please enter your phone number"
+                        class="bg-white w-[22rem] rounded-sm"></ion-input>
 
                     <ion-button color="black-demo" class="demo-btn">
                         TAKE A FREE DEMO

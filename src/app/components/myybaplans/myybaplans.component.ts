@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { DataService } from 'src/app/service/data.service.service';
 
 @Component({
@@ -12,8 +12,10 @@ export class MyybaplansComponent implements OnInit {
 
   plans: any
 
+  @Input() data:any
+
   ngOnInit(): void {
-    this.plans = this.myybaPlans.myybaShopPlans
+    this.plans = this.data
   }
 
   slideOpts = {

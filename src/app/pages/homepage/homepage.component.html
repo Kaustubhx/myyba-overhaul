@@ -1,13 +1,13 @@
-<ion-content [scrollEvents]="true">
+<ion-content *ngIf="data!=null">
     <Header id="header"></Header>
 
-    <Banner></Banner>
+    <Banner [data]="data.metadata[0]"></Banner>
 
-    <Stores></Stores>
+    <Stores [data]="data.shoptype"></Stores>
 
-    <Features></Features>
+    <Features [data]="data.feature"></Features>
 
-    <MyybaPlans></MyybaPlans>
+    <MyybaPlans [data]="data.subscriptions"></MyybaPlans>
 
     <ion-row class="serviceSectionTitle">
         <ion-text class="uppercase text-lg font-bold">
@@ -15,11 +15,5 @@
         </ion-text>
     </ion-row>
 
-    <Myybaservices></Myybaservices>
-
-    <Bussinesspartners></Bussinesspartners>
-
-    <!-- <Testimony></Testimony> -->
-
-    <Footer></Footer>
+    <Myybaservices [data]="data.services"></Myybaservices>
 </ion-content>

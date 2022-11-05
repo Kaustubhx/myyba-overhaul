@@ -15,6 +15,8 @@ import { MyybaservicesComponent } from './components/myybaservices/myybaservices
 import { BussinesspartnersComponent } from './components/bussinesspartners/bussinesspartners.component';
 import { TestimonyComponent } from './components/testimony/testimony.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { ApiserviceService } from './service/apiservice.service';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -33,9 +35,10 @@ import { FooterComponent } from './components/footer/footer.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    IonicModule.forRoot()
+    IonicModule.forRoot(),
+    HttpClientModule
   ],
-  providers: [DataService],
+  providers: [DataService, ApiserviceService, HttpClient],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
