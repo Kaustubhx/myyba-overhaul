@@ -32,7 +32,10 @@
     flex-direction: column;
     max-width: 26rem;
 }
-
+.service-demo-btn{
+    --background:black;
+    color: white;
+}
 ion-button.ion-color-service-black-demo {
     --background: red;
     font-size: 1.125rem;

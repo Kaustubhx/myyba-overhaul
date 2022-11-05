@@ -1,7 +1,7 @@
 <ion-content *ngIf="data!=null">
     <Header id="header"></Header>
 
-    <Banner  [data]="data.metadata[0]" ></Banner>
+    <Banner   [data]="data.metadata[0]" ></Banner>
     
     <Stores [data]="data.shoptype"></Stores>
     
@@ -10,4 +10,12 @@
     <MyybaPlans [data]="data.subscriptions"></MyybaPlans>
 
     <Myybaservices [data]="data.services"></Myybaservices>
+    <Bussinesspartners [data]="data.client"></Bussinesspartners>
+<Testimony [data]="data.testimony"></Testimony>
+
+<Footer [data]="data.metadata[0]"></Footer>
+    
+   
+
+
 </ion-content>

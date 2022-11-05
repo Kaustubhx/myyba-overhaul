@@ -1,0 +1,69 @@
+.footer-wrapper {
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    background: black;
+}
+
+.footerContainer {
+    display: flex;
+    justify-content: space-between;
+    flex: .75;
+
+    color: white;
+    padding: 3rem 0;
+    text-transform: uppercase;
+}
+
+.navLinks {
+    display: flex;
+    flex-direction: column;
+}
+
+.navLinks>ion-text {
+    cursor: pointer;
+}
+
+.formalities {
+    display: flex;
+    flex-direction: column;
+}
+
+.formalities>ion-text {
+    cursor: pointer;
+}
+
+.footerLinks {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    text-align: right;
+}
+
+ion-icon {
+    color: white;
+    font-size: 32px;
+
+    cursor: pointer;
+}
+
+ion-button[shape=circle] {
+    --background: #2826A1;
+    --border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    font-size: 10px;
+    margin-top: -2rem;
+}
+
+.backToTop {
+    z-index: 3;
+    position: absolute;
+
+    border-radius: 999px;
+    border: 4px solid white;
+
+    cursor: pointer;
+}
