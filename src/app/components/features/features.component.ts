@@ -9,16 +9,16 @@ import { DataService } from 'src/app/service/data.service.service';
 })
 export class FeaturesComponent implements OnInit {
 
-  constructor(private featuresAndDetailsData: DataService,private  apiService:ApiserviceService) { }
+  constructor(private featuresAndDetailsData: DataService, private apiService: ApiserviceService) { }
 
-  @Input() data:any
+  @Input() data: any
   featureAndDetails: any
 
   ngOnInit(): void {
-  
-      this.featureAndDetails=this.data
-     
-    
+
+    this.featureAndDetails = this.data
+
+
   }
 
 }

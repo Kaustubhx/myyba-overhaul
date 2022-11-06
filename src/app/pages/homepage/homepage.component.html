@@ -1,4 +1,4 @@
-<ion-content *ngIf="data!=null">
+<ion-content [scrollEvents]="true" *ngIf="data!=null">
     <Header id="header"></Header>
 
     <Banner [data]="data.metadata[0]"></Banner>
