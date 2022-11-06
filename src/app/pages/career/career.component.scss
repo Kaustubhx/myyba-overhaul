@@ -1,0 +1,52 @@
+.serviceSectionTitle {
+    justify-content: center;
+    background: #EFEFEF;
+    align-items: center;
+    padding: 2rem 0;
+}
+.first-container{
+    background-color: #EFEFEF;
+
+}
+.about-container{
+    padding: 3rem 11rem;
+  
+
+}
+.whatsapp{
+    color: green;
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+.reach{
+    justify-content: center;
+}
+.sector{
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    height: 100px;
+    border: 1px solid rgba(0, 0, 0, 0.212);
+    background: white;
+    margin: 10px;
+
+    
+}
+.sector-row{
+    padding: 3rem 0;
+}
+p{
+    text-align: justify;
+}
+.header{
+  
+    text-align: center;
+    justify-content: center;
+}
+.header-title{
+    text-decoration: underline;
+    text-transform: capitalize;
+}
