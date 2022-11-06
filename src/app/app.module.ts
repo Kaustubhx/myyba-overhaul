@@ -19,6 +19,12 @@ import { ApiserviceService } from './service/apiservice.service';
 import { DataService } from './service/data.service.service';
 import { NoticationService } from './service/notification.service';
 import { TestimonyComponent } from './components/testimony/testimony.component';
+import { Terms } from './pages/static/static.component';
+import { About } from './pages/about/about.component';
+import { Privacy } from './pages/privacy/privacy.component';
+import { Poster } from './pages/posters/poster.component';
+import { NgxQRCodeModule } from '@techiediaries/ngx-qrcode';
+import { Career } from './pages/career/career.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +39,12 @@ import { TestimonyComponent } from './components/testimony/testimony.component';
     BussinesspartnersComponent,
     TestimonyComponent,
     FooterComponent,
+    Terms,
+    About,
+    Privacy,
+    Poster,
+    Career
+
   ],
   imports: [
     BrowserModule,
@@ -40,6 +52,7 @@ import { TestimonyComponent } from './components/testimony/testimony.component';
     IonicModule.forRoot(),
     HttpClientModule,
     FormsModule,
+    NgxQRCodeModule
   ],
   providers: [DataService,ApiserviceService,HttpClient,NoticationService],
   bootstrap: [AppComponent]

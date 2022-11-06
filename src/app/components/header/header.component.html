@@ -10,8 +10,8 @@
                 Products & Service
                 <ion-icon name="chevron-down-outline"></ion-icon>
             </ion-text>
-            <ion-text title="About" class="text-lg hover-underline-animation">About</ion-text>
-            <ion-text title="Careers" class="text-lg hover-underline-animation">Careers</ion-text>
+            <ion-text title="About" (click)="routeTo('about')" class="text-lg hover-underline-animation">About</ion-text>
+            <ion-text title="Careers" (click)="routeTo('career')" class="text-lg hover-underline-animation">Careers</ion-text>
         </ion-row>
 
     </ion-grid>

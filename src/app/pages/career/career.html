@@ -1,0 +1,96 @@
+<ion-content>
+        <Header id="header"></Header>
+<ion-grid class="first-container">
+
+        <ion-row class="about-container">
+        <ion-col>
+                <h1>
+                        Myyba Family
+                </h1>
+                <h4>
+                        We are a bunch of enterprenaurs under one roof
+                </h4>
+            <p> we dont believe in employment, its do your work take earn your money with this you dont feel like working for anyone but yourself 
+                this enables each one of us to not only feel like a boss but also to dedicate ourself in the same manner
+            </p>  
+                <p><b>"As Bizz Buddies we are all enterprenaurs solving same problem together"</b></p>
+        </ion-col>
+           <ion-col>
+
+           </ion-col>
+</ion-row>
+
+<ion-row class="header about-container">
+        <h1 class="header-title">
+                Values To Posses
+        </h1>
+</ion-row>
+</ion-grid>
+<ion-grid>
+<ion-row class="about-container">
+        <ion-col>
+                <ion-row>
+                        <h4>
+                                To sustain at myyba you will either have to possess or persuie the below values :
+                        </h4>
+                </ion-row>
+                <ion-row>
+                        
+                        <p>
+                        <b>1. value and dedication to work</b><br>
+                        <b>2. Adaptable To Change</b><br>
+                        <b>3. Work Till Its Done Attitude</b><br>
+                        <b>4. Innovate at difficult times</b><br>
+                        <b>5. Vocal for thoughts</b><br>
+                        <b>6. Leadership first with yourself then with others</b>
+                </p>
+                         </ion-row>
+                </ion-col>
+                <ion-col>
+
+                </ion-col>
+</ion-row>
+<ion-row class="header">
+        <h1 class="header-title">
+             
+        Sectors at myyba 
+        </h1>
+</ion-row>
+<ion-row class="about-container first-container">
+        <ion-col size="5.5" class="sector" *ngFor="let sector Of sectors">
+                <h1>
+                        {{sector}}
+                </h1>
+        </ion-col>
+</ion-row>
+<ion-row class="header first-container">
+        <h1 class="header-title">
+             
+        How To Join ?
+        </h1>
+
+</ion-row>
+<ion-row class="about-container">
+       <ion-grid>
+        <ion-row class="reach">
+                <h4>Whatsapp</h4>
+        </ion-row>
+        <ion-row class="reach">
+                <h4 class="whatsapp"><ion-icon name="logo-whatsapp">
+                </ion-icon> +91 9284469487</h4>
+        </ion-row>
+        <ion-row class="reach">
+                <h4>Mail Us</h4>
+        </ion-row>
+        <ion-row class="reach">
+                <h4 class="mail"><ion-icon name="logo-mail">
+
+                </ion-icon> {{data.metadata[0].mail}}</h4>
+        </ion-row>
+</ion-grid>
+</ion-row>
+</ion-grid>
+<Footer [data]="data.metadata[0]">
+
+</Footer>
+</ion-content>

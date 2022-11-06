@@ -1,0 +1,114 @@
+
+
+<ion-card id="capture"  *ngIf="theme==1 && data!=null" [style.background]="data.color1" >
+  <ion-row>
+    <ion-col size="12" style="padding: 0;">
+      <img  [src]="getFile(data.file)" alt="" style="border-radius: 10px;" height="250px">
+    </ion-col>
+ <ion-col size="0.2">
+
+ </ion-col>
+  </ion-row>
+  <ion-row style="display: flex;align-items: center;margin-bottom: 10px;">
+    <ion-text style="margin: auto;">
+      Hello Wonderful People! 👋
+    </ion-text>
+
+ </ion-row> 
+ <ion-row style="display: flex;align-items: center;margin-bottom: 10px;">
+<ion-text style="margin: auto;width: 320px;">
+  {{getName(data.name)}} is now available online. You can now place an order through our online store.
+</ion-text>
+ </ion-row>
+ <ion-row style="display: flex;align-items: center;margin-bottom: 10px;">
+  <ion-text  style="margin: auto;">
+    Scan the QR to visit the store
+  </ion-text>
+
+ </ion-row>
+ <ion-row [style.background]="data.color2" style="display: flex;align-items: center;">
+  <ion-col size="4">
+    <ngx-qrcode
+    [elementType]="getElementUrl()"
+    [errorCorrectionLevel]="getCorrectionLevel()"
+    [value]="getUrl(data.url)"
+    cssClass="qrcodeshadow" style="border-radius: 20px;"></ngx-qrcode>
+</ion-col>
+<ion-col size="1">
+
+</ion-col>
+<ion-col size="7">
+
+  <ion-row style="text-align: right;">
+   
+  1. Open google lens
+  
+</ion-row>
+<ion-row style="text-align: right;">
+ 
+  2. Scan QR code
+
+</ion-row>
+<ion-row style="text-align: right;">
+ 
+  3. Place an order
+ 
+</ion-row>
+
+</ion-col>
+ </ion-row>
+ <ion-row style="margin-top: 20px;display: flex;align-items: center;" [style.background]="data.color2">
+  <ion-text style="margin: auto;">
+    Or visit the url : {{getUrl(data.url)}}
+  </ion-text>
+
+ </ion-row>
+ 
+</ion-card>
+<ion-card id="capture"  *ngIf="theme==2 && data!=null" [style.background]="data.color2" >
+  <ion-row style="display:flex;align-items: center;height: 40px;border-radius:10px 10px 0px 0px;margin-bottom:10px" [style.background]="data.color2">
+    <ion-text style="margin: auto;font-size: 10px;">
+      Open google lens > Scan QR code > Place an order
+    </ion-text>
+  </ion-row>
+  <ion-row style="margin-top: 10px;padding: 20px;border-radius: 10px;" [style.background]="data.color1">
+    
+      <ngx-qrcode
+      [elementType]="getElementUrl()"
+      [errorCorrectionLevel]="getCorrectionLevel()"
+      [value]="getUrl(data.url)"
+      cssClass="qrcodeshadow" style="height: 250px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 250px;"></ngx-qrcode>
+
+    <ion-row style="margin-left: auto;
+    margin-right: auto;
+    width: 200px;height: 40px;border-radius: 0px 0px 10px 10px;"[style.background]="data.color2" >
+    <ion-text style="margin: auto;">
+      {{getName(data.name)}}
+    </ion-text>
+
+    </ion-row>
+  </ion-row>
+  <ion-row style="display: flex;align-items: center;margin-top: 40px;" [style.background]="data.color2">
+    <ion-text style="margin: auto;">
+      Hello Wonderful People! 👋
+    </ion-text>
+
+ </ion-row> 
+ <ion-row style="display: flex;align-items: center;margin-bottom: 10px;" [style.background]="data.color2">
+<ion-text style="margin: auto;width: 320px;">
+  {{getName(data.name)}} is now available online. You can now place an order through our online store.
+</ion-text>
+ </ion-row>
+
+
+ <ion-row style="position:absolute;bottom:20px;width:100%;display: flex;align-items: center;" [style.background]="data.color1">
+  <ion-text style="margin: auto;">
+    Visit the url : {{getUrl(data.url)}}
+  </ion-text>
+
+ </ion-row>
+ 
+</ion-card>
