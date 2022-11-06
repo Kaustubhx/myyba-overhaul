@@ -18,6 +18,6 @@ export class HeaderComponent implements OnInit {
 
 
   routeTo(page:any){
-    this.route.navigate(['page'])
+    this.route.navigate([page])
   }
 }
