@@ -13,6 +13,7 @@ export class FooterComponent implements OnInit {
   @Input() data:any;
   constructor() { }
 
+  date = new Date().getFullYear();
 
   // scroll: any
 

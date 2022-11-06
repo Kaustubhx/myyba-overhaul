@@ -2,9 +2,8 @@
     <ion-row class="featuresDetails-Container space-y-7">
         <ion-row class="featureDetails" *ngFor="let featureDetail of featureAndDetails">
             <ion-col class="features_details-wrapper">
-                <ion-row>
+                <ion-row class="uppercase">
                     <div [innerHTML]="featureDetail.description"></div>
-                   
                 </ion-row>
             </ion-col>
        

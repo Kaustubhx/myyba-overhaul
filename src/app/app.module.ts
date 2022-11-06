@@ -19,6 +19,7 @@ import { ApiserviceService } from './service/apiservice.service';
 import { DataService } from './service/data.service.service';
 import { NoticationService } from './service/notification.service';
 import { TestimonyComponent } from './components/testimony/testimony.component';
+import { TakedemoComponent } from './components/takedemo/takedemo.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { TestimonyComponent } from './components/testimony/testimony.component';
     BussinesspartnersComponent,
     TestimonyComponent,
     FooterComponent,
+    TakedemoComponent,
   ],
   imports: [
     BrowserModule,

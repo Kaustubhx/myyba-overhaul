@@ -1,0 +1,40 @@
+.demoSection-wrapper {
+    display: flex;
+    justify-content: center;
+
+    background: #EFEFEF;
+}
+
+.sectionContainer {
+    display: flex;
+    align-items: center;
+    flex: .75;
+    justify-content: space-between;
+
+    margin: 5rem 0;
+}
+
+.sectionInputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: white;
+    width: 22rem;
+    border-radius: 10px;
+    padding: 1rem 0;
+}
+
+.sectionInputs > ion-input {
+    background: #EFEFEF;
+
+    margin: 0.75rem 0.875rem;
+    width: 20rem;
+    border-radius: 5px;
+}
+
+.demoSection-btn {
+    --background: black;
+    width: 20rem;
+    border-radius: 5px;
+}

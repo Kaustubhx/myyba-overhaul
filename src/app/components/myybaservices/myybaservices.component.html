@@ -1,21 +1,21 @@
 <ion-grid class="ourServices-wrapper">
     <ion-row class="ourServices-Container space-y-7">
         <ion-row class="ourServices" *ngFor="let ourService of ourServices">
-                <ion-col>
-                    <ion-row>
-                        <div [innerHTML]="ourService.description"></div>
-                    </ion-row>
-                    <ion-button class="service-demo-btn">
-                        Take a free demo
-                        <!-- <ion-icon name="chevron-forward-outline"></ion-icon> -->
-                    </ion-button>
-                </ion-col>
-               <ion-col>
-                <ion-img [src]="ourService.image"></ion-img>
-               </ion-col>
-    </ion-row>          
-               
-            
+            <ion-col>
+                <ion-row>
+                    <div [innerHTML]="ourService.description"></div>
+                </ion-row>
+                <ion-button class="service-demo-btn">
+                    Take a free demo
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                </ion-button>
+            </ion-col>
+            <ion-col>
+                <ion-img [src]="ourService.image" class="object-contain w-72"></ion-img>
+            </ion-col>
+        </ion-row>
+
+
     </ion-row>
-    
+
 </ion-grid>

@@ -1,69 +1,81 @@
 .footer-wrapper {
-    display: flex;
-    justify-content: center;
+    margin-top: 1.5rem;
+    background: black;
     position: relative;
 
-    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 2.5rem;
+}
+
+.backToTop {
+    position: absolute;
+    top: 0;
+    margin-top: -1.5rem;
+
+    border: 4px solid white;
+    border-radius: 999px;
+
+    color: white;
+}
+
+ion-button[shape=circle] {
+    --border-radius: 50%;
+    --background: #000;
+    font-size: 10px !important;
+    width: 47px;
+    height: 47px;
 }
 
 .footerContainer {
     display: flex;
-    justify-content: space-between;
-    flex: .75;
+    flex-direction: column;
+    align-items: center;
+}
 
+.webTitleSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
     color: white;
-    padding: 3rem 0;
+}
+
+.webNavigation {
+    color: #FFDC5F;
     text-transform: uppercase;
 }
 
-.navLinks {
+.contactLinks {
     display: flex;
-    flex-direction: column;
-}
+    align-items: center;
 
-.navLinks>ion-text {
-    cursor: pointer;
-}
-
-.formalities {
-    display: flex;
-    flex-direction: column;
-}
-
-.formalities>ion-text {
-    cursor: pointer;
-}
-
-.footerLinks {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-
-    text-align: right;
+    color: white;
+    text-transform: uppercase;
+    margin-top: 1.2rem;
 }
 
 ion-icon {
+    font-size: 24px;
+}
+
+.socialLinks {
+    margin-top: 1.2rem;
     color: white;
-    font-size: 32px;
-
-    cursor: pointer;
 }
 
-ion-button[shape=circle] {
-    --background: #2826A1;
-    --border-radius: 50%;
-    width: 56px;
-    height: 56px;
-    font-size: 10px;
-    margin-top: -2rem;
-}
+.copyrights {
+    justify-content: center;
 
-.backToTop {
-    z-index: 3;
-    position: absolute;
+    background: #585858;
+    color: #C2C2C2;
 
-    border-radius: 999px;
-    border: 4px solid white;
-
-    cursor: pointer;
+    margin-top: 2rem;
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
 }

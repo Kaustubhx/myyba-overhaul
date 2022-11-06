@@ -1,26 +1,40 @@
 <ion-grid class="footer-wrapper">
     <ion-button shape="circle" class="backToTop">
-        <ion-icon slot="icon-only" name="arrow-up-outline"></ion-icon>
+        <ion-icon name="chevron-up-outline"></ion-icon>
     </ion-button>
     <ion-row class="footerContainer">
-        <ion-row class="navLinks space-y-3">
-            <ion-text>Home</ion-text>
-            <ion-text>Products and Services</ion-text>
-            <ion-text>About</ion-text>
-            <ion-text>Careers</ion-text>
+        <ion-row class="webTitleSection">
+            <ion-text class="text-2xl font-bold">myyba</ion-text>
+            <ion-text class="text-sm font-light tracking-[0.7em] leading-[0.25rem]">shops</ion-text>
+            <ion-text class="text-lg text-[#A5A5A5] w-[26rem] text-center mt-3 mb-6">
+                Get everything your business needs to <ion-text class="font-bold">succeed</ion-text> under a single roof
+            </ion-text>
         </ion-row>
-        <ion-row class="formalities space-y-3">
-            <ion-text>Privacy</ion-text>
-            <ion-text>Terms and Condition</ion-text>
+        <ion-row class="webNavigation space-x-6">
+            <ion-text title="Home" class="text-lg">Home</ion-text>
+            <ion-text title="Products & Service" class="text-lg">
+                Products & Service
+            </ion-text>
+            <ion-text title="About" class="text-lg">About</ion-text>
+            <ion-text title="Careers" class="text-lg">Careers</ion-text>
+            <ion-text title="Careers" class="text-lg">privacy</ion-text>
+            <ion-text title="Careers" class="text-lg">terms and condition</ion-text>
         </ion-row>
-        <ion-row class="footerLinks space-y-3">
-            <ion-text>{{data.mail}}</ion-text>
+        <ion-row class="contactLinks space-x-2">
+            <ion-icon name="mail"></ion-icon>
+            <ion-text class="!mr-6">{{data.mail}}</ion-text>
+
+            <ion-icon name="call"></ion-icon>
             <ion-text>+{{data.whatsapp_number}}</ion-text>
-            <ion-row class="myybaSocialLinks space-x-3">
-                <ion-icon name="logo-youtube"></ion-icon>
-                <ion-icon name="logo-instagram"></ion-icon>
-                <ion-icon name="logo-facebook"></ion-icon>
-            </ion-row>
+        </ion-row>
+        <ion-row class="socialLinks space-x-2">
+            <ion-icon name="logo-youtube"></ion-icon>
+            <ion-icon name="logo-instagram"></ion-icon>
+            <ion-icon name="logo-facebook"></ion-icon>
         </ion-row>
     </ion-row>
+    <ion-row class="copyrights text-sm">
+        Copyright &copy; {{date}} myyba
+    </ion-row>
+
 </ion-grid>

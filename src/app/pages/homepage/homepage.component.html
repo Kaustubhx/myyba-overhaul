@@ -1,8 +1,8 @@
 <ion-content [scrollEvents]="true" *ngIf="data!=null">
     <Header id="header"></Header>
 
-    <Banner   [data]="data.metadata[0]" ></Banner>
-    
+    <Banner [data]="data.metadata[0]"></Banner>
+
     <Stores [data]="data.shoptype"></Stores>
 
     <Features [data]="data.feature"></Features>
@@ -11,17 +11,26 @@
 
     <ion-row class="serviceSectionTitle">
         <ion-text class="uppercase text-lg font-bold">
-            Our Services
+            Other Services
         </ion-text>
     </ion-row>
 
     <Myybaservices [data]="data.services"></Myybaservices>
+
     <Bussinesspartners [data]="data.client"></Bussinesspartners>
-<Testimony [data]="data.testimony"></Testimony>
 
-<Footer [data]="data.metadata[0]"></Footer>
-    
-   
+    <!-- <Testimony [data]="data.testimony"></Testimony> -->
 
+    <ion-row class="demoSectionTitle">
+        <ion-text class="uppercase text-lg font-bold">
+            take a free demo
+        </ion-text>
+    </ion-row>
+
+    <!-- <Takedemo></Takedemo>  //Instead banner as discussed in meet -->
+
+    <Banner [data]="data.metadata[0]"></Banner>
+
+    <Footer [data]="data.metadata[0]"></Footer>
 
 </ion-content>

@@ -1,28 +1,32 @@
 .bussinessPartners-wrapper {
-    margin: 2rem 0;
+    margin-top: 2rem;
 }
 
 .sectionTitle {
     display: flex;
     justify-content: center;
 
-    background: #EFEFEF;
+    background: #2826A1;
+    color: white;
     font-size: 20px;
     font-weight: 600;
     padding: 2rem 0;
     text-transform: uppercase;
 }
-.client-image{
+
+.client-image {
     max-width: 70px;
     max-height: 70px;
 }
-.client-col{
- display: flex;
- align-items: center;
- align-content: center;   
- justify-content: center;
+
+.client-col {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
 }
 
 .bussinessLogosSection {
+    padding: 1.5rem 0;
     justify-content: center;
 }

@@ -11,7 +11,7 @@ export class MyybaservicesComponent implements OnInit {
   constructor(private serviceList: DataService) { }
 
   ourServices: any;
-@Input() data:any
+  @Input() data: any
   ngOnInit(): void {
 
     this.ourServices = this.data

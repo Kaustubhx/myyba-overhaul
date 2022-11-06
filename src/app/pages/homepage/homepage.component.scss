@@ -1,6 +1,12 @@
-.serviceSectionTitle {
+.serviceSectionTitle,
+.demoSectionTitle {
     justify-content: center;
     background: #EFEFEF;
     align-items: center;
     padding: 2rem 0;
+}
+
+.demoSectionTitle {
+    background: black;
+    color: white;
 }

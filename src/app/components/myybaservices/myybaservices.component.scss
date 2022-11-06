@@ -23,8 +23,16 @@
     flex-direction: row-reverse;
 }
 
+.ourServices:nth-child(even)>ion-col>ion-img {
+    margin-right: auto;
+}
+
 .ourServices:nth-child(odd) {
     flex-direction: row;
+}
+
+.ourServices:nth-child(odd)>ion-col>ion-img {
+    margin-left: auto;
 }
 
 .ourServicesText {
@@ -32,10 +40,13 @@
     flex-direction: column;
     max-width: 26rem;
 }
-.service-demo-btn{
-    --background:black;
+
+.service-demo-btn {
+    --background: black;
     color: white;
+    margin-top: 2rem;
 }
+
 ion-button.ion-color-service-black-demo {
     --background: red;
     font-size: 1.125rem;
