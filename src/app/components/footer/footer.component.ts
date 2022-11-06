@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, Input, OnInit, ViewChild } from '@angular/core';
 import { IonContent } from '@ionic/angular';
 import { DataService } from 'src/app/service/data.service.service';
 
@@ -9,7 +9,10 @@ import { DataService } from 'src/app/service/data.service.service';
 })
 export class FooterComponent implements OnInit {
 
+
+  @Input() data:any;
   constructor() { }
+
 
   // scroll: any
 

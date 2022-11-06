@@ -1,12 +1,17 @@
 <ion-grid class="features_details-wrapper" *ngIf="featureAndDetails!=null">
     <ion-row class="featuresDetails-Container space-y-7">
         <ion-row class="featureDetails" *ngFor="let featureDetail of featureAndDetails">
-            <ion-row class="detailsText space-y-5">
-                <ion-text class="text-lg">
-                    {{featureDetail.description}}
-                </ion-text>
-            </ion-row>
+            <ion-col class="features_details-wrapper">
+                <ion-row>
+                    <div [innerHTML]="featureDetail.description"></div>
+                   
+                </ion-row>
+            </ion-col>
+       
+           <ion-col  class="features_details-wrapper">
             <ion-img [src]="featureDetail.image"></ion-img>
+           </ion-col>
+        
         </ion-row>
     </ion-row>
 </ion-grid>

@@ -12,6 +12,16 @@
     padding: 2rem 0;
     text-transform: uppercase;
 }
+.client-image{
+    max-width: 70px;
+    max-height: 70px;
+}
+.client-col{
+ display: flex;
+ align-items: center;
+ align-content: center;   
+ justify-content: center;
+}
 
 .bussinessLogosSection {
     justify-content: center;

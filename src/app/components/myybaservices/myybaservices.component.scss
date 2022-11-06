@@ -32,8 +32,12 @@
     flex-direction: column;
     max-width: 26rem;
 }
-
-.serivce-demo-btn {
-    width: 50%;
-    --background: black;
+.service-demo-btn{
+    --background:black;
+    color: white;
+}
+ion-button.ion-color-service-black-demo {
+    --background: red;
+    font-size: 1.125rem;
+    letter-spacing: -0.025em;
 }

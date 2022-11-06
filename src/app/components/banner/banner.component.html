@@ -9,21 +9,52 @@
                 single roof
             </ion-text>
 
-            <ion-row class="inputFieldSection">
+            <ion-row class="inputFieldSection" *ngIf="page==1">
                 <ion-text class="text-[#737373] text-sm mt-3">
                     Enter your number to request a <ion-text class="font-bold text-black italic">FREE</ion-text> demo
                 </ion-text>
-                <ion-row class="demoButton">
-                    <ion-input type="tel" placeholder="Please enter your phone number"
-                        class="bg-white w-[22rem] rounded-sm"></ion-input>
+                <ion-row class="demoButton" >
+                    <ion-input type="tel" [(ngModel)]="mobile" placeholder="Please enter your phone number" class="bg-white w-[22rem] rounded-sm"></ion-input>
 
-                    <ion-button color="black-demo" class="demo-btn">
+                    <ion-button color="black-demo" (click)="submitMobile()" class="demo-btn">
                         TAKE A FREE DEMO
                         <ion-icon name="chevron-forward-outline"></ion-icon>
                     </ion-button>
                 </ion-row>
+               
             </ion-row>
+            <ion-row class="inputFieldSection" *ngIf="page==2">
+                <ion-text class="text-[#737373] text-sm mt-3">
+                    Enter otp sent to you on your mobile or <ion-text class="font-bold text-black italic" (click)="changeNumber">change number</ion-text>
+                </ion-text>
+                <ion-row class="demoButton" *ngIf="page==2">
+                    <ion-input [(ngModel)]="otp" type="number" placeholder="Please enter your otp" class="bg-white w-[22rem] rounded-sm"></ion-input>
+    
+                    <ion-button (click)="submitOtp()" color="black-demo" class="demo-btn">
+                        Submit OTP
+                        <ion-icon name="chevron-forward-outline"></ion-icon>
+                    </ion-button>
+                </ion-row>
+            </ion-row>
+            <ion-row class="inputFieldSection" *ngIf="page==3">
+                <ion-text class="text-[#737373] text-sm mt-3">
+                     <ion-text class="font-bold text-black italic">Thank You!</ion-text> Our team will contact you within 24 hours 
+                </ion-text>
+                <ion-row class="demoButton" *ngIf="page==3">
+                
+                    <ion-button (click)="ok()" color="black-demo" class="demo-btn">
+                    Enter New Response
+                        <ion-icon name="chevron-forward-outline"></ion-icon>
+                    </ion-button>
+                </ion-row>
+               
+            </ion-row>
+        
+           
+        
+        
         </ion-row>
+
     </ion-row>
 
     <!-- <Stores></Stores> -->

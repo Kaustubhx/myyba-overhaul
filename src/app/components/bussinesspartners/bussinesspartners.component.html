@@ -3,6 +3,9 @@
         <ion-text>Trusted by <ion-text class="text-[#2826A1]">200+</ion-text> Businesses across the nation</ion-text>
     </ion-row>
     <ion-row class="bussinessLogosSection">
-        <ion-img src="/assets/newImages/BussinessPartners.png"></ion-img>
+        <ion-col  class="client-col" size="2" *ngFor="let client Of data">
+            <ion-img class="client-image" [src]="client.image"></ion-img>
+        </ion-col>
+   
     </ion-row>
 </ion-grid>

@@ -6,7 +6,20 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root'
 })
 export class ApiserviceService {
-
+ 
+  enter(mobile:any) {
+    let opt= {
+   
+       "mobile": mobile,
+      
+       "user_role": environment.role
+     }
+     return this.http.post(`${environment.HOST}/user/enter`,opt)
+   }
+ 
+   validateOtp(optin:any,otp: any, number: any) { 
+   return this.http.post(`${environment.HOST}/user/validateOtp?mobile=`+number+'&otp='+otp+'&role='+environment.role+'&optin='+optin,"");
+   }
   constructor(private http:HttpClient) { }
 
   getData() {
