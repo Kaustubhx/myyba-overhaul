@@ -11,9 +11,7 @@
                 </ion-text> under a single roof
             </ion-text>
         </ion-row>
-        <ion-row class="formalities space-y-3">
-            <ion-text (click)="routeTo('privacy')">Privacy</ion-text>
-            <ion-text (click)="routeTo('terms')">Terms and Condition</ion-text>
+        <ion-row class="formalities space-y-3 flex-col">
             <ion-row class="webNavigation space-x-6">
                 <ion-text title="Home" class="text-lg">Home</ion-text>
                 <ion-text title="Products & Service" class="text-lg">
@@ -25,13 +23,6 @@
                 <ion-text title="Careers" class="text-lg">terms and condition</ion-text>
             </ion-row>
             <ion-row class="footerLinks space-y-3">
-                <ion-text (click)="mailTo(data.mail)">{{data.mail}}</ion-text>
-                <ion-text (click)="callTo(data.whatsapp_number)">+{{data.whatsapp_number}}</ion-text>
-                <ion-row class="myybaSocialLinks space-x-3">
-                    <ion-icon (click)="goTo('')" name="logo-youtube"></ion-icon>
-                    <ion-icon (click)="goTo('')" name="logo-instagram"></ion-icon>
-                    <ion-icon (click)="goTo('')" name="logo-facebook"></ion-icon>
-                </ion-row>
                 <ion-row class="contactLinks space-x-2">
                     <ion-icon name="mail"></ion-icon>
                     <ion-text class="!mr-6">{{data.mail}}</ion-text>
@@ -45,10 +36,10 @@
                     <ion-icon name="logo-facebook"></ion-icon>
                 </ion-row>
             </ion-row>
-            <ion-row class="copyrights text-sm">
-                Copyright &copy; {{date}} myyba
-            </ion-row>
         </ion-row>
+    </ion-row>
+    <ion-row class="copyrights text-sm">
+        Copyright &copy; {{date}} myyba
     </ion-row>
 </ion-grid>
 <!-- <ion-row class="copyright-container">

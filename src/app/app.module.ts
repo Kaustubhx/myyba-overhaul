@@ -26,6 +26,7 @@ import { Poster } from './pages/posters/poster.component';
 import { NgxQRCodeModule } from '@techiediaries/ngx-qrcode';
 import { Career } from './pages/career/career.component';
 import { TakedemoComponent } from './components/takedemo/takedemo.component';
+import { FoundersComponent } from './components/founders/founders.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +47,7 @@ import { TakedemoComponent } from './components/takedemo/takedemo.component';
     Poster,
     Career,
     TakedemoComponent,
+    FoundersComponent,
   ],
   imports: [
     BrowserModule,
@@ -53,9 +55,9 @@ import { TakedemoComponent } from './components/takedemo/takedemo.component';
     IonicModule.forRoot(),
     HttpClientModule,
     FormsModule,
-    NgxQRCodeModule,
+    NgxQRCodeModule
   ],
-  providers: [DataService,ApiserviceService,HttpClient,NoticationService],
+  providers: [DataService, ApiserviceService, HttpClient, NoticationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

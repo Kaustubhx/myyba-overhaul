@@ -1,0 +1,33 @@
+.founders-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.sectionTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: black;
+    color: white;
+    padding: 1.2rem 0;
+}
+
+.foundersContainer {
+    display: flex;
+    justify-content: space-between;
+    flex: .75;
+}
+
+.founderLeft{
+    display: flex;
+    flex-direction: column;
+    width: 19rem; 
+    text-align: end;
+}
+
+.founderRight {
+    display: flex;
+    flex-direction: column;
+    width: 19rem; 
+}

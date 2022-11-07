@@ -29,20 +29,6 @@ ion-button[shape=circle] {
     height: 47px;
 }
 
-.copyright-container{
-    background: whitesmoke;
-    display: flex;
-    justify-content: center;
-    flex: .75;
-    padding: 3rem 0;
-}
-.copyright-row{
-    display: flex;
-    justify-content: space-between;
-    flex: .75;
-}
-
-
 
 .footerContainer {
     display: flex;
@@ -81,6 +67,12 @@ ion-icon {
 .socialLinks {
     margin-top: 1.2rem;
     color: white;
+}
+
+.footerLinks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .copyrights {

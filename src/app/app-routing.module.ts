@@ -10,10 +10,10 @@ import { Terms } from './pages/static/static.component';
 const routes: Routes = [
   { path: '', component: HomepageComponent },
   { path: 'about', component: About },
-  { path: 'privacy', component: Privacy },
-  {path: 'poster',component:Poster},
-  {path:'terms', component:Terms},
-  {path:'career', component:Career},
+  // { path: 'privacy', component: Privacy },
+  // { path: 'poster', component: Poster },
+  // { path: 'terms', component: Terms },
+  { path: 'career', component: Career },
 
 
 ];
